@@ -6,6 +6,7 @@ def count_strings(array)
       counter += 1
     end
   end
+  counter
 end
 
 def count_empty_strings(array)
