@@ -1,11 +1,12 @@
 def count_strings(array)
   # Return the total number of strings in the provided array using the count enumerable
-  counter = 0
-  new_array = []
-  if array.count(String)
-  new_array.push(counter)
+  array.count do |index|
+    counter = 0
+    if array[index].is_a?(String)
+      counter += 1
+    end
   end
-  new_array
+  counter
 end
 
 def count_empty_strings(array)
