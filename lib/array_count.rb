@@ -4,6 +4,7 @@ def count_strings(array)
   array.count do |index|
     if index == String
       counter += 1
+    end
   end
   counter
 end
